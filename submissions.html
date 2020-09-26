@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>TechnoFun</title>
+    <link rel="stylesheet" href="css/submissions.css">
+
+    
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="founder.html">FOUNDER</a></li>
+            <li><a href="kontakt.html">CONTACT</a></li>
+            <li><a href="submissions.html">SUBMISSIONS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Leave Us a Comment</h2>
+        <form>
+            <textarea placeholder='Add Your Comment'></textarea>
+            <div class="btn">
+                <input type="submit" value='Comment'>
+                <button id='clear' href='#'>Cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        function validateForm() {
+
+            var ime1 = document.getElementById("fname");
+
+            if (ime1.value == "" || god1.value == "") {
+                return false;
+            } else {
+                alert("Uspesno ste se komentarisali!~");
+                return true;
+            }
+        }
+
+
+        function restartovanje() {
+            document.getElementById("myForm").reset();
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>

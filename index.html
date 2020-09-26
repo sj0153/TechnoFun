@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <title>TechnoFun</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="founder.html">FOUNDER</a></li>
+            <li><a href="Kontakt.html">CONTACT</a></li>
+            <li><a href="submissions.html">SUBMISSIONS</a></li>
+        </ul>
+    </nav>
+</div>
+<section class="sec1"><img src="slike/slika1.jpg"></section>
+<section class="sec2">
+    <div>
+        <h1>TECHNOFUN</h1>
+        <p> We value making technology available to persons of all ages, physical conditions and locations in a world.
+            Our goal is to bring cloaser poeple who love technology and enjoy using it. We beleave that techonlogy is not just a way to make 
+            everyday tasks easier, it is a way of life and our mirror into the future. We recognize the unique value and creative potential in everyone. 
+            Through programs, exhibits and events we commit to honor and support this potential by inspiring the innovator in everyone. 
+            We value challenges because they produce innovations. We commit to approaching problems with enthusiasm and optimism. 
+            We celebrate the power of technology to transform lives. We commit to helping people use technology creatively and ethically.
+            We are passionate about our work and about working together. We can’t help but share this joyfulness with everyone.
+            <br>
+            <br>
+            TECH, YEAH!
+            <br>
+            <br>
+            <br>
+            <br>
+           </p>
+    </div>
+</section>
+<section class="sec4">
+    <form id="myForm">
+    <div class="login-box">
+        <h1>If you want to apply for mail notiffications, you can do it down bellow!</h1>
+        
+        <div class="textbox">
+            <input type="text" placeholder="Full name" name="" value="" id="fname" required>
+        </div>
+        <div class="textbox">
+            <input type="text" placeholder="Your mail adress" name="" value="" id="fgod" required>
+        </div>
+        <input class="btn" type="submit" onclick="validateForm()" name="" value="Apply">
+        <input class="btn" type="submit" onclick="restartovanje()" name="" value="Clear">
+    </div>
+    </form>
+</section>
+<section class="sec3"><img src="slike/cool.jpg"></section>
+
+<script>
+    
+
+function validateForm() {
+
+    var ime1 = document.getElementById("fname");
+    var god1 = document.getElementById("fgod");
+
+    if (ime1.value == "" || god1.value == "") {
+        return false;
+    }else {
+        alert ("Uspesno ste se prijavili!~");
+        return true;
+    }
+}
+
+function restartovanje() {
+  document.getElementById("myForm").reset();
+}
+</script>
+
+</body>
+</html>
